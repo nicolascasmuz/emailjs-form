@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario con emailjs</title>
+    <script defer src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "",
+        });
+      })();
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="section-form">
+      <h2 class="section-form__title">Contacto</h2>
+      <form class="form">
+        <label for="nombre" class="form__label">
+          <h3 class="form__h3">NOMBRE</h3>
+          <input type="text" class="form__input" id="nombre" name="nombre" />
+        </label>
+        <label for="email" class="form__label">
+          <h3 class="form__h3">EMAIL</h3>
+          <input type="text" class="form__input" id="email" name="email" />
+        </label>
+        <label for="consulta" class="form__label">
+          <h3 class="form__h3">CONSULTA</h3>
+          <textarea
+            type="text"
+            class="form__textarea"
+            id="consulta"
+            name="consulta"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+        <button class="form__button">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
