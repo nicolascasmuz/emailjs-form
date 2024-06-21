@@ -28,7 +28,11 @@ body {
   display: grid;
   gap: 20px;
   max-width: 425px;
+<<<<<<< HEAD
   min-width: 315px;
+=======
+  max-height: 315px;
+>>>>>>> 821bb390aa4d3fb75d64b197e391a0486fa37e97
 }
 
 .form__h3 {
