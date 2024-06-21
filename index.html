@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario con emailjs</title>
-    <link rel="stylesheet" href="./style.css" />
     <script defer src="./index.js"></script>
     <script
       type="text/javascript"
@@ -13,10 +12,11 @@
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "UAM97fDj_KChHqHLR",
+          publicKey: "",
         });
       })();
     </script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section class="section-form">
@@ -28,16 +28,17 @@
         </label>
         <label for="email" class="form__label">
           <h3 class="form__h3">EMAIL</h3>
-          <input type="email" class="form__input" id="email" name="email" />
+          <input type="text" class="form__input" id="email" name="email" />
         </label>
         <label for="consulta" class="form__label">
           <h3 class="form__h3">CONSULTA</h3>
           <textarea
+            type="text"
             class="form__textarea"
             id="consulta"
+            name="consulta"
             cols="30"
             rows="10"
-            name="consulta"
           ></textarea>
         </label>
         <button class="form__button">Enviar</button>

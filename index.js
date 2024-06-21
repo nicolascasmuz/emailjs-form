@@ -1,5 +1,6 @@
-function contactComp(form) {
+function emailJs(form) {
   const formEl = document.querySelector(".form");
+
   formEl.addEventListener("submit", async (input) => {
     input.preventDefault();
 
@@ -9,16 +10,16 @@ function contactComp(form) {
       consulta: input.target.consulta.value,
     };
 
-    var serviceID = "service_3f590wp";
-    var templateID = "template_5nxxzoa";
+    var serviceID = "";
+    var templateID = "";
 
     try {
       await emailjs.send(serviceID, templateID, request);
-      alert("¡Gracias por contactarme, te responderé a la brevedad!");
+      alert("Gracias por contactarme!");
     } catch (err) {
       console.error(err);
     }
   });
 }
 
-contactComp();
+emailJs();
